@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --fc-page: #FFFFFF;
+  --ff-primary: 'Roboto', sans-serif;
+
+  --hue: 194;
+  --primary-coloar: hsl(var(var(--hue), 100%, 63%))
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--fc-page);
+  background-color: #000000;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 1120px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+
+header h1 {
+  font-size: 2.6rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.search input {
+  color: var(--ff-primary);
+  font-weight: bold;
+  border: none;
+  height: 4rem;
+  width: 45rem;
+  background-color: #06181C;
+  padding: 0 .8rem;
+  border-radius: .5rem;
+}
+
+.search button {
+  color: var(--ff-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  height: 4rem;
+  border: none;
+  border-radius: .5rem;
+  background: #065E7C;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  outline: 1px solid #4A808C;
+  border-radius: 1.2rem;
+  border-collapse: collapse;
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--ff-primary);
+}
+
+table th {
+  background: #092D38;
+  text-align: left;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;  
+}
+
+table td.repositories, .followers {
+  font-weight: bold;
+}
+
+table tr {
+  background: #06161B80;
+  border-top:  1px solid #4A808C;
+}
+
+table tr:first-child {
+  border: none;
+}
+
+
+table tr:nth-child(odd) {
+  background: #06161B;
+}
+
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  font-family: var();
+}
+
+td.remove {
+  cursor: pointer;
+  color: #f03838;
+}
+
+
